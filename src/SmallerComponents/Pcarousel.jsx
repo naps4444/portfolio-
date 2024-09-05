@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { IoArrowBackOutline, IoArrowForwardOutline } from 'react-icons/io5';
 import { useSwipeable } from 'react-swipeable';
-import p1 from './../assets/p1.svg';
-import p2 from './../assets/p2.svg';
-import p3 from './../assets/p3.svg';
+import p1 from './../assets/jobme.png';
+import p2 from './../assets/tasky.png';
+import p3 from './../assets/cofe.png';
 import arrow from './../assets/arrow.svg';
 
 const Pcarousel = () => {
@@ -12,23 +12,26 @@ const Pcarousel = () => {
   const slides = [
     {
       image: p1,
-      h1: 'Responsive Design',
+      h1: 'Job Me',
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
-      butText: 'View website',
+      butText: 'View Website',
+      link: 'https://job-me-react.vercel.app/',
       arrImg: arrow,
     },
     {
       image: p2,
-      h1: 'Front-End Frameworks',
+      h1: 'TaskDuty',
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
       butText: 'View Project',
+      link: 'https://taskduty-vs1.vercel.app/',
       arrImg: arrow,
     },
     {
       image: p3,
-      h1: 'Testing and Debugging',
+      h1: 'CofeShop',
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
-      butText: 'View website',
+      butText: 'View Website',
+      link: 'https://cofeshop-alpha.vercel.app/',
       arrImg: arrow,
     },
   ];
@@ -75,7 +78,9 @@ const Pcarousel = () => {
                 <p>{slide.paragraph}</p>
 
                 <a
-                  href='/LandingPage'
+                  href={slide.link}
+                  target='_blank' // Open in new tab
+                  rel='noopener noreferrer' // Security measure for new tab links
                   className='flex w-[125px] items-center gap-2 hover:border-b-2 hover:border-[#5E3BEE]'
                 >
                   <p>{slide.butText}</p>
