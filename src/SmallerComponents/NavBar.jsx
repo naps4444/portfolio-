@@ -9,7 +9,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-[#FFFFFF] text-[#1C1E53]  py-4 lg:py-6">
+    <nav className="bg-[#FFFFFF] text-[#1C1E53] font-roboto py-4 lg:py-6">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <img src={logo} alt="logo" className="text-xl font-bold" />

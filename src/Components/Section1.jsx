@@ -9,6 +9,11 @@ const Section1 = () => {
   return (
     <>
 
+<div className='py-20 text-[#282938] w-11/12 container mx-auto'>
+            <p className='font-semibold text-sm'>My Skills</p>
+            <h1 className='text-[36px] font-bold'>My Expertise</h1>
+        </div>
+
     <div className='lg:hidden'>
         <Carousel/>
     </div>

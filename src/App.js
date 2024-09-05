@@ -11,6 +11,7 @@ import Footer from './SmallerComponents/Footer';
 function App() {
   return (
     <>
+    <div className='font-roboto'>
     <div className=''>
       <LandingPage/>
     </div>
@@ -37,6 +38,8 @@ function App() {
 
     <div className='bg-[#F5FCFF]'>
       <Footer/>
+    </div>
+
     </div>
     
     </>
