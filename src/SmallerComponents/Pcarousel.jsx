@@ -15,7 +15,7 @@ const Pcarousel = () => {
       h1: 'Job Me',
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
       butText: 'View Website',
-      link: 'https://job-me-react.vercel.app/',
+      link: 'https://job-me-next-js.vercel.app/',
       arrImg: arrow,
     },
     {
