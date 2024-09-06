@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { IoArrowBackOutline, IoArrowForwardOutline } from 'react-icons/io5';
 import { useSwipeable } from 'react-swipeable';
 import Stars from './../assets/Stars.svg';
@@ -44,6 +44,15 @@ const Tescarousel = () => {
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
+
+  // Automate slide change every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // Slide every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, [currentIndex]); // Re-run effect when currentIndex changes
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () => nextSlide(),

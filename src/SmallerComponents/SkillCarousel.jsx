@@ -38,6 +38,15 @@ const SkillsCarousel = () => {
     };
   }, []);
 
+  // Automate slide change every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // Change slides every 3 seconds
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, [currentIndex]); // Re-run effect when currentIndex changes
+
   // Handle swipe gesture
   const handleTouchStart = (e) => {
     setTouchStart(e.targetTouches[0].clientX);

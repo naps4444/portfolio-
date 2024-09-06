@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { IoArrowBackOutline, IoArrowForwardOutline } from 'react-icons/io5';
 import { useSwipeable } from 'react-swipeable';
 import s1 from './../assets/s1.svg';
@@ -31,6 +31,15 @@ const Carousel = () => {
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
     },
   ];
+
+  // Auto slide change every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // 3000ms = 3 seconds
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, [currentIndex]); // Re-run effect when currentIndex changes
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;

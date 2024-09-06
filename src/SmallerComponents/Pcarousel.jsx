@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { IoArrowBackOutline, IoArrowForwardOutline } from 'react-icons/io5';
 import { useSwipeable } from 'react-swipeable';
 import p1 from './../assets/jobme.png';
@@ -35,6 +35,15 @@ const Pcarousel = () => {
       arrImg: arrow,
     },
   ];
+
+  // Auto slide change every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // 3000ms = 3 seconds
+
+    return () => clearInterval(interval); // Clear the interval on component unmount
+  }, [currentIndex]); // Re-run effect when currentIndex changes
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
