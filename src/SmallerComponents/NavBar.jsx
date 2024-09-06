@@ -9,7 +9,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-[#FFFFFF] text-[#1C1E53] font-roboto py-4 lg:py-6">
+    <nav className="bg-[#FFFFFF] text-[#1C1E53] w-11/12 container mx-auto font-roboto py-4 lg:py-6">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <img src={logo} alt="logo" className="text-xl font-bold" />
@@ -68,7 +68,7 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden mt-2 space-y-2">
+        <div className="md:hidden mt-2 space-y-2 ">
           <a href="#" className="block px-4 py-2 hover:text-[#5E3BEE]">
             Home
           </a>
