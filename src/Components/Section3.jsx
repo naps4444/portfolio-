@@ -13,7 +13,7 @@ const Section3 = () => {
         <div className='flex justify-between items-center'>
             <div className=' text-[#282938] flex flex-col gap-5 lg:gap-0'>
                 <p className='text-xs font-bold'>Recent Projects</p>
-                <p className='font-bold text-[20px] lg:text-[35px]'>My Portfolio</p>
+                <p className='font-bold text-[17px] lg:text-[35px]'>My Portfolio</p>
             </div>
             <div className='bg-[#7E69D3] w-[180px] rounded gap-2 py-3 px-3 flex justify-center items-center'>
                 <img src={giti} alt="git icon" />

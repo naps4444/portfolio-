@@ -66,7 +66,7 @@ const Carousel = () => {
               <img
                 src={slide.image}
                 alt={`Slide ${index + 1}`}
-                className="w-[230px] mx-auto object-cover"
+                className="w-[100px] mx-auto object-cover"
               />
               <h1 className="p-4 text-3xl font-semibold text-center">{slide.h1}</h1>
               <p className="p-4 text-lg text-center">{slide.paragraph}</p>
