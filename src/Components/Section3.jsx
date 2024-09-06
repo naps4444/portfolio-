@@ -11,7 +11,7 @@ const Section3 = () => {
     <>
     <div className='container w-11/12 mx-auto py-10'>
         <div className='flex justify-between items-center'>
-            <div className='text-[#282938] flex flex-col gap-5 lg:gap-0'>
+            <div className=' text-[#282938] flex flex-col gap-5 lg:gap-0'>
                 <p className='text-xs font-bold'>Recent Projects</p>
                 <p className='font-bold text-[20px] lg:text-[35px]'>My Portfolio</p>
             </div>
