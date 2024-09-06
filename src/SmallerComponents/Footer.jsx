@@ -10,7 +10,7 @@ const Footer = () => {
     <>
     <div className='w-11/12 mx-auto container'>
         <div className='flex flex-col lg:flex-row justify-between items-center py-14 border-[#2829388C] border-b-[1px]'>
-           z <div className='flex gap-2 items-center'>
+            <div className='flex gap-2 items-center'>
                <img src={logo} alt="logo" className="text-xl font-bold" />
                <h1 className="font-bold text-2xl text-[#394149]">AgbaDev,</h1>
             </div>
