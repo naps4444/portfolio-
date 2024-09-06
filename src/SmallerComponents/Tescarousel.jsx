@@ -49,14 +49,15 @@ const Tescarousel = () => {
     onSwipedLeft: () => nextSlide(),
     onSwipedRight: () => prevSlide(),
     preventDefaultTouchmoveEvent: true,
-    trackMouse: true, // Allows swiping with mouse as well
+    trackMouse: true,
   });
 
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
   return (
-    <div
-      {...swipeHandlers}
-      className="relative w-full max-w-lg mx-auto group"
-    >
+    <div {...swipeHandlers} className="relative w-full max-w-lg mx-auto group">
       <div className="overflow-hidden">
         <div
           className="flex transition-transform duration-500"
@@ -65,7 +66,7 @@ const Tescarousel = () => {
           {slides.map((slide, index) => (
             <div key={index} className="border border-[#006B6A] rounded p-8 min-w-full">
               <div>
-                <img src={slide.icon} alt={`Stars icon`} />
+                <img src={slide.icon} alt="Stars icon" />
                 <p className="mt-5">{slide.paragraph}</p>
               </div>
               <div className="flex items-center mt-5 gap-4">
@@ -93,6 +94,17 @@ const Tescarousel = () => {
       >
         <IoArrowForwardOutline size={24} />
       </button>
+
+      {/* Indicators */}
+      <div className="flex justify-center mt-4 space-x-2">
+        {slides.map((_, index) => (
+          <div
+            key={index}
+            className={`w-3 h-3 rounded-full cursor-pointer ${index === currentIndex ? 'bg-gray-800' : 'bg-gray-400'}`}
+            onClick={() => goToSlide(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };

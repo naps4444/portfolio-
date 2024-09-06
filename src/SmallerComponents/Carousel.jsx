@@ -51,11 +51,16 @@ const Carousel = () => {
     trackMouse: true, // Allows swiping with mouse as well
   });
 
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
   return (
     <div
       {...swipeHandlers}
       className="relative w-full max-w-lg mx-auto group"
     >
+      {/* Carousel wrapper */}
       <div className="overflow-hidden">
         <div
           className="flex transition-transform duration-500"
@@ -88,6 +93,17 @@ const Carousel = () => {
       >
         <IoArrowForwardOutline size={24} />
       </button>
+
+      {/* Indicators */}
+      <div className="flex justify-center mt-4 space-x-2">
+        {slides.map((_, index) => (
+          <div
+            key={index}
+            className={`w-3 h-3 rounded-full cursor-pointer ${index === currentIndex ? 'bg-gray-800' : 'bg-gray-400'}`}
+            onClick={() => goToSlide(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };

@@ -52,14 +52,16 @@ const Pcarousel = () => {
     onSwipedLeft: () => nextSlide(),
     onSwipedRight: () => prevSlide(),
     preventDefaultTouchmoveEvent: true,
-    trackMouse: true, // Allows swiping with mouse as well
+    trackMouse: true,
   });
 
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
   return (
-    <div
-      {...swipeHandlers}
-      className="relative w-full max-w-lg mx-auto group"
-    >
+    <div {...swipeHandlers} className="relative w-full max-w-lg mx-auto group">
+      {/* Carousel wrapper */}
       <div className="overflow-hidden">
         <div
           className="flex transition-transform duration-500"
@@ -73,22 +75,18 @@ const Pcarousel = () => {
                 className="w-full mx-auto object-cover"
               />
 
-              <div className='p-5 flex flex-col gap-4'>
-                <h1 className='text-lg font-semibold'>{slide.h1}</h1>
+              <div className="p-5 flex flex-col gap-4">
+                <h1 className="text-lg font-semibold">{slide.h1}</h1>
                 <p>{slide.paragraph}</p>
 
                 <a
                   href={slide.link}
-                  target='_blank' // Open in new tab
-                  rel='noopener noreferrer' // Security measure for new tab links
-                  className='flex w-[125px] items-center gap-2 hover:border-b-2 hover:border-[#5E3BEE]'
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex w-[125px] items-center gap-2 hover:border-b-2 hover:border-[#5E3BEE]"
                 >
                   <p>{slide.butText}</p>
-                  <img
-                    src={slide.arrImg}
-                    alt="Arrow Icon"
-                    className="w-4 h-4"
-                  />
+                  <img src={slide.arrImg} alt="Arrow Icon" className="w-4 h-4" />
                 </a>
               </div>
             </div>
@@ -109,6 +107,17 @@ const Pcarousel = () => {
       >
         <IoArrowForwardOutline size={24} />
       </button>
+
+      {/* Indicators */}
+      <div className="flex justify-center mt-4 space-x-2">
+        {slides.map((_, index) => (
+          <div
+            key={index}
+            className={`w-3 h-3 rounded-full cursor-pointer ${index === currentIndex ? 'bg-gray-800' : 'bg-gray-400'}`}
+            onClick={() => goToSlide(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };

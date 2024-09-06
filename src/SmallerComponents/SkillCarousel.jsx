@@ -70,7 +70,7 @@ const SkillsCarousel = () => {
   };
 
   return (
-    <section className="py-10 px-5 w-10/12 mx-auto">
+    <section className="pb-10 px-5 w-10/12 mx-auto">
       <h2 className="text-2xl font-bold mb-6">Skills & Technologies</h2>
       <div
         className="relative overflow-hidden"
