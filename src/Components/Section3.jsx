@@ -51,7 +51,7 @@ const Section3 = () => {
                 <h1 className='text-lg font-semibold'>TaskDuty</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
 
-                <a href='https://taskduty-vs1.vercel.app/' className='flex w-[125px] items-center gap-2  hover:border-b-2 hover:border-[#5E3BEE]'>
+                <a href='taskduty-pi.vercel.app/' className='flex w-[125px] items-center gap-2  hover:border-b-2 hover:border-[#5E3BEE]'>
                     <p>View website</p>
                     <img src={arrow} alt="arrow icon" />
                 </a>
