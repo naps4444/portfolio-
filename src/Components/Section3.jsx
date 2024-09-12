@@ -52,7 +52,7 @@ const Section3 = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
 
                 <a href='https://taskduty-pi.vercel.app/' className='flex w-[125px] items-center gap-2  hover:border-b-2 hover:border-[#5E3BEE]'>
-                    <p>View web app</p>
+                    <p>View website</p>
                     <img src={arrow} alt="arrow icon" />
                 </a>
                 </div>
