@@ -1,10 +1,11 @@
-import React from 'react'
-import giti from './../assets/giti.svg'
-import p1 from './../assets/jobme.png'
-import p2 from './../assets/tasky.png'
-import p3 from './../assets/cofe.png'
-import arrow from './../assets/arrow.svg'
-import Pcarousel from '../SmallerComponents/Pcarousel'
+import React from 'react';
+import giti from './../assets/giti.svg';
+import p1 from './../assets/jobme.png';
+import p2 from './../assets/tasky.png';
+import p3 from './../assets/cofe.png';
+import p4 from './../assets/beta.png';
+import arrow from './../assets/arrow.svg';
+import Pcarousel from '../SmallerComponents/Pcarousel';
 
 const Section3 = () => {
   return (
@@ -74,6 +75,23 @@ const Section3 = () => {
                 </div>
 
             </div>
+
+            <div className='shadow-md rounded'>
+            <img src={p4} alt="img" />
+
+            <div className='p-5 flex flex-col gap-4'>
+                <h1 className='text-lg font-semibold'>BetaHouse</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+
+                <a href='https://real-estate-b6sm.onrender.com/' className='flex w-[125px] items-center gap-2  hover:border-b-2 hover:border-[#5E3BEE]'>
+                    <p>View website</p>
+                    <img src={arrow} alt="arrow icon" />
+                </a>
+                </div>
+
+            </div>
+
+
         </div>
 
 

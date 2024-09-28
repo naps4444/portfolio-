@@ -4,6 +4,7 @@ import { useSwipeable } from 'react-swipeable';
 import p1 from './../assets/jobme.png';
 import p2 from './../assets/tasky.png';
 import p3 from './../assets/cofe.png';
+import p4 from './../assets/beta.png';
 import arrow from './../assets/arrow.svg';
 
 const Pcarousel = () => {
@@ -32,6 +33,14 @@ const Pcarousel = () => {
       paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
       butText: 'View Website',
       link: 'https://cofeshop-alpha.vercel.app/',
+      arrImg: arrow,
+    },
+    {
+      image: p4,
+      h1: 'BetaHouse',
+      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      butText: 'View Website',
+      link: 'https://real-estate-b6sm.onrender.com/',
       arrImg: arrow,
     },
   ];
