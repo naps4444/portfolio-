@@ -20,7 +20,7 @@ const Section4 = () => {
 
         <div className='hidden lg:grid grid-cols-3 gap-8 items-center justify-between py-10'>
           {/* Testimonial 1 */}
-          <div className='border border-[#006B6A] rounded p-8 shadow-lg lg:w-[400px]'>
+          <div className='border border-[#006B6A] rounded p-8 shadow-lg lg:w-[350px]'>
             <div>
               <img src={Stars} alt="Stars" className='w-30 h-30' />
               <p className='mt-5 text-[#282938] text-lg italic'>
@@ -38,7 +38,7 @@ const Section4 = () => {
           </div>
 
           {/* Testimonial 2 */}
-          <div className='border border-[#006B6A] rounded p-8 shadow-lg lg:w-[400px]'>
+          <div className='border border-[#006B6A] rounded p-8 shadow-lg lg:w-[350px]'>
             <div>
               <img src={Stars} alt="Stars" className='w-30 h-30' />
               <p className='mt-5 text-[#282938] text-lg italic'>
@@ -56,7 +56,7 @@ const Section4 = () => {
           </div>
 
           {/* Testimonial 3 */}
-          <div className='border border-[#006B6A] rounded p-8 shadow-lg lg:w-[400px]'>
+          <div className='border border-[#006B6A] rounded p-8 shadow-lg lg:w-[350px]'>
             <div>
               <img src={Stars} alt="Stars" className='w-30 h-30' />
               <p className='mt-5 text-[#282938] text-lg italic'>
