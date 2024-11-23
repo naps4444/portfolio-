@@ -13,22 +13,22 @@ const Carousel = () => {
     {
       image: s1,
       h1: 'Responsive Design',
-      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      paragraph: 'Building adaptive, mobile-first, responsive web applications ensuring cross-platform compatibility.',
     },
     {
       image: s2,
       h1: 'Front-End Frameworks',
-      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      paragraph: 'Proficient in React, Next.js, and various other frontend frameworks for building dynamic user interfaces.',
     },
     {
       image: s3,
       h1: 'Testing and Debugging',
-      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      paragraph: 'Strong analytical skills in troubleshooting complex issues and ensuring stable, bug-free applications.',
     },
     {
       image: s4,
       h1: 'Cloud Services',
-      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      paragraph: 'Utilizing cloud services such as Vercel and Render for seamless deployment and scalable application hosting.',
     },
   ];
 

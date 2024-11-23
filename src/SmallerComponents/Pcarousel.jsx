@@ -14,7 +14,7 @@ const Pcarousel = () => {
     {
       image: p1,
       h1: 'Job Me',
-      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      paragraph: 'A job application platform built with Next.js, featuring user authentication and API integration for seamless job application management.',
       butText: 'View Website',
       link: 'https://job-me-next-js.vercel.app/',
       arrImg: arrow,
@@ -22,7 +22,7 @@ const Pcarousel = () => {
     {
       image: p2,
       h1: 'TaskDuty',
-      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      paragraph: 'A task management platform built with Next.js, integrating API-based CRUD operations and user authentication for task tracking.',
       butText: 'View Project',
       link: 'https://taskduty-vs1.vercel.app/',
       arrImg: arrow,
@@ -30,7 +30,7 @@ const Pcarousel = () => {
     {
       image: p3,
       h1: 'CofeShop',
-      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      paragraph: 'An e-commerce platform for coffee products, built with React, just a web design, showing my styling skills',
       butText: 'View Website',
       link: 'https://cofeshop-alpha.vercel.app/',
       arrImg: arrow,
@@ -38,7 +38,7 @@ const Pcarousel = () => {
     {
       image: p4,
       h1: 'BetaHouse',
-      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+      paragraph: 'A real estate platform that allows users to browse and manage properties, built with Next.js and integrated with API-based operations.',
       butText: 'View Website',
       link: 'https://real-estate-b6sm.onrender.com/',
       arrImg: arrow,

@@ -72,7 +72,7 @@ const Section5 = () => {
         <div className='flex flex-col justify-center items-center gap-4'>
           <p className='text-xs font-bold'>Get In Touch</p>
           <h1 className='font-bold text-[20px] lg:text-[35px]'>Contact me</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p className='text-center'>Got a project or idea? Let’s connect and make it happen!</p>
         </div>
 
         <div>
